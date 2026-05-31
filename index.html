@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>לב טוב — מערכות טכנולוגיות עם נשמה</p></title>
+  
+  <!-- SEO Optimization Meta Tags -->
+  <meta name="description" content="ברוכים הבאים לפורטפוליו 'לב טוב'. פיתוח אתרים, מערכות רשת, תוספי כרום ואוטומציות חכמות המותאמים אישית לצרכי הציבור הדתי והחרדי, תוך הקפדה על ערכים ויראת שמיים.">
+  <meta name="keywords" content="לב טוב, פורטפוליו פרויקטים, הרב אביאל נריה, מגיה תורני AI, החברותא, זמן עבודה, מעקב הרגלים, לוח טהרה, תוספי כרום, אוטומציה במייל, פודקאסט למייל, ויקימייל, מחלץ קבצים, פיתוח אתרים, חרדים, מתמחים טופ">
+  <meta name="author" content="לב טוב">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="לב טוב — מערכות טכנולוגיות עם נשמה">
+  <meta property="og:description" content="פיתוח אתרים, תוספי כרום ואוטומציות המותאמים אישית לצרכי הציבור הדתי והחרדי.">
+  <meta property="og:image" content="favicon.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="לב טוב — מערכות טכנולוגיות עם נשמה">
+  <meta property="twitter:description" content="פיתוח אתרים, תוספי כרום ואוטומציות המותאמים אישית לצרכי הציבור הדתי והחרדי.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- FontAwesome & CSS stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- JSON-LD Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "לב טוב",
+    "image": "favicon.png",
+    "description": "פיתוח אתרים, מערכות רשת, תוספי כרום ואוטומציות חכמות המותאמים אישית לצרכי הציבור הדתי והחרדי.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "ירושלים",
+      "addressCountry": "IL"
+    },
+    "email": "myylbwt@gmail.com",
+    "url": "https://lev-good.github.io/Good-heart/",
+    "priceRange": "₪₪"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- מסך פתיחה יוקרתי (Cosmic Portal Intro Loader) -->
+  <div id="intro-overlay">
+    <div class="intro-particles" id="intro-particles"></div>
+    
+    <div class="tech-heart-wrapper" onclick="exitIntro()" title="לחץ לכניסה מהירה">
+      <svg class="tech-heart" viewBox="0 0 100 100">
+        <defs>
+          <radialGradient id="heartGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="var(--gold)" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="var(--gold)" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        
+        <!-- ליבת הלב הפועמת המרכזית -->
+        <path class="heart-core active" d="M50 88 C48 88 12 55 12 33 C12 18 24 6 39 6 C48 6 50 14 50 14 C50 14 52 6 61 6 C76 6 88 18 88 33 C88 55 52 88 50 88 Z" fill="url(#heartGlow)"></path>
+        
+        <!-- קווי המתאר הטכנולוגיים של הלב -->
+        <path class="heart-outline" d="M50 85 C22 63 12 47 12 32 C12 18 22 8 36 8 C44 8 48 13 50 14.5" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" filter="url(#neon-glow)"></path>
+        <path class="heart-outline" d="M50 85 C78 63 88 47 88 32 C88 18 76 8 61 8 C53 8 49 13 50 14.5" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" filter="url(#neon-glow)"></path>
+        
+        <!-- רכיבי מעגל מודפס פנימיים (Circuit Board lines) -->
+        <g class="circuit-element active">
+          <path d="M50 25 L50 72" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 6" stroke-linecap="round" opacity="0.65"></path>
+          <circle cx="50" cy="25" r="3" fill="#38bdf8" filter="url(#neon-glow)"></circle>
+          <circle cx="50" cy="72" r="3" fill="#38bdf8" filter="url(#neon-glow)"></circle>
+          
+          <path d="M50 48 L35 38 L25 38" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.5" stroke-linecap="round"></path>
+          <circle cx="25" cy="38" r="2" fill="#38bdf8"></circle>
+          
+          <path d="M50 58 L65 68 L75 68" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.5" stroke-linecap="round"></path>
+          <circle cx="75" cy="68" r="2" fill="#38bdf8"></circle>
+        </g>
+      </svg>
+    </div>
+    
+    <div class="intro-text">
+      <h1 class="intro-title">לב טוב</h1>
+      <p class="intro-subtitle">מערכות טכנולוגיות עם נשמה</p>
+    </div>
+    
+    <!-- מד טעינה -->
+    <div class="intro-loader-container">
+      <div class="intro-loader-bar">
+        <div class="intro-loader-fill" id="loader-fill"></div>
+      </div>
+      <div class="intro-loader-status">
+        <span id="loader-percent">0%</span>
+        <span id="loader-text">מאתחל מערכת לב טכנולוגי...</span>
+      </div>
+    </div>
+    
+    <!-- כפתור דילוג בעיצוב זכוכית -->
+    <button class="intro-skip-btn" onclick="exitIntro()">
+      <span>דלג כניסה</span>
+      <i class="fa-solid fa-chevron-left" style="font-size:0.75rem"></i>
+    </button>
+  </div>
+
+  <!-- Background Glowing Orbs -->
+  <div class="bg-glow-orb orb-indigo"></div>
+  <div class="bg-glow-orb orb-rose"></div>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <a class="logo" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" href="#">
+      <i class="fa-solid fa-gem"></i> לב טוב
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#projects-section">העבודות שלי</a></li>
+      <li><a href="#pricing-section">מחירון</a></li>
+      <li><a href="#contact-section">צור קשר</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" id="theme-toggle" title="החלף מצב תצוגה">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a href="mailto:myylbwt@gmail.com" class="nav-cta">שילחו מייל</a>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div style="width:6px; height:6px; border-radius:50%; background:var(--gold)"></div> מפתח • יוצר • טכנולוגיה
+      </div>
+      <h1>לב טוב</h1>
+      <p class="hero-tag">יוצרים ערך, בונים קדושה.</p>
+      <p class="hero-sub">ברוכים הבאים ל"לב טוב". כמפתח טכנולוגי, המטרה שלי היא ליצור כלים דיגיטליים נקיים, יעילים ומותאמים אישית לציבור הירא לדבר ה'.</p>
+      <div class="hero-buttons">
+        <a href="#projects-section" class="btn-primary">
+          <i class="fa-solid fa-arrow-down"></i> לפרויקטים הנבחרים
+        </a>
+        <a href="mailto:myylbwt@gmail.com" class="btn-secondary">
+          <i class="fa-regular fa-envelope"></i> שליחת אימייל
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENTO STATISTICS GRID -->
+  <section class="bento-stats" id="stats-section">
+    <div class="stat-box">
+      <div class="stat-number" data-target="24">0</div>
+      <div class="stat-label">פרויקטים פעילים</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number" data-target="6">0</div>
+      <div class="stat-label">תוספי כרום</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number" data-target="15">0</div>
+      <div class="stat-label">אתרים ומערכות</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number">∞</div>
+      <div class="stat-label">שליחות ואהבה</div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="projects-section" id="projects-section">
+    <div class="sec-heading">
+      <span class="sec-lbl">✦ הפורטפוליו</span>
+      <h2 class="sec-title">פרויקטים נבחרים</h2>
+      <p class="sec-sub">כלים שפותחו מתוך שליחות ורצון להביא תועלת, התייעלות וקדושה למרחב הדיגיטלי.</p>
+    </div>
+
+    <!-- Category Tabs Navigation -->
+    <div class="category-nav">
+      <button class="cat-btn active" data-filter="all">
+        <i class="fa-solid fa-cubes"></i> הכל
+      </button>
+      <button class="cat-btn" data-filter="web">
+        <i class="fa-solid fa-globe"></i> אתרים ומערכות
+      </button>
+      <button class="cat-btn" data-filter="ext">
+        <i class="fa-solid fa-puzzle-piece"></i> תוספים והרחבות
+      </button>
+      <button class="cat-btn" data-filter="auto">
+        <i class="fa-solid fa-bolt"></i> סקריפטים ואוטומציות
+      </button>
+    </div>
+
+    <!-- Bento Portfolio Grid of 25 projects -->
+    <div class="bento-portfolio" id="bento-portfolio">
+      <!-- Cards will be dynamically generated by Javascript to avoid massive, messy HTML markup and keep maintenance high-end -->
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section class="pricing-section" id="pricing-section">
+    <div class="sec-heading">
+      <span class="sec-lbl">✦ השקעה משתלמת</span>
+      <h2 class="sec-title">מחירון והצעות</h2>
+      <p class="sec-sub">כלים טכנולוגיים ברמה גבוהה, במחירים מיוחדים ונוחים לציבור.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pr-header">
+          <h3>אוטומציות וסקריפטים</h3>
+          <p class="pr-desc">ייעול תהליכים, בוטים במייל, סקריפטים ל-Google Apps ומערכות דיגיטליות חכמות.</p>
+        </div>
+        <div class="pr-price">
+          <span>החל מ-</span><small>₪</small>150
+        </div>
+        <a href="mailto:myylbwt@gmail.com?subject=התעניינות באוטומציה" class="btn-secondary">
+          <i class="fa-regular fa-envelope"></i> פנו להצעת מחיר
+        </a>
+      </div>
+
+      <div class="pricing-card premium">
+        <span class="pr-badge">מומלץ ופופולרי</span>
+        <div class="pr-header">
+          <h3>בניית אתר אישי / תדמית</h3>
+          <p class="pr-desc">אתר אינטרנט מלא, מעוצב, מהיר ומותאם לכל המכשירים. פתרון מושלם להצגת הפרויקט שלך.</p>
+        </div>
+        <div class="pr-price">
+          <span>רק</span><small>₪</small>300<span>בלבד!</span>
+        </div>
+        <a href="mailto:myylbwt@gmail.com?subject=בניית אתר" class="btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> להזמנה ויצירת קשר
+        </a>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pr-header">
+          <h3>תוספי כרום ייעודיים</h3>
+          <p class="pr-desc">פיתוח הרחבות לדפדפן Chrome שחוסכות זמן, פותרות תקלות ומשפרות את חוויית הגלישה.</p>
+        </div>
+        <div class="pr-price">
+          <span>החל מ-</span><small>₪</small>250
+        </div>
+        <a href="mailto:myylbwt@gmail.com?subject=התעניינות בתוסף כרום" class="btn-secondary">
+          <i class="fa-regular fa-envelope"></i> פנו להצעת מחיר
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact-section">
+    <div class="sec-heading">
+      <span class="sec-lbl">✦ צור קשר</span>
+      <h2 class="sec-title">נשמח לשמוע ממך</h2>
+      <p class="sec-sub">יש לך רעיון? צריך כלי מותאם אישית? כתוב לנו ונחזור אליך בהקדם.</p>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-card">
+        <form action="https://formspree.io/f/xqenwznb" method="POST" class="contact-form">
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="name">שם מלא</label>
+              <input type="text" name="שם" id="name" class="form-input" placeholder="ישראל ישראלי" required>
+            </div>
+            <div class="form-group">
+              <label for="email">דוא"ל לחזרה</label>
+              <input type="email" name="_replyto" id="email" class="form-input" placeholder="example@gmail.com" style="direction:ltr; text-align:right;" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">נושא הפנייה</label>
+            <input type="text" name="נושא" id="subject" class="form-input" placeholder="בניית אתר / תוסף / הצעה עסקית וכדו'" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">תוכן ההודעה</label>
+            <textarea name="הודעה" id="message" class="form-textarea" placeholder="איך נוכל לעזור לך?..." required></textarea>
+          </div>
+
+          <input type="text" name="_gotcha" style="display:none" />
+          <button type="submit" class="btn-primary">שליחת ההודעה <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+
+        <div class="contact-email-direct">
+          או ישירות לאימייל: 
+          <a href="mailto:myylbwt@gmail.com"><i class="fa-regular fa-envelope"></i> myylbwt@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>לב טוב — יוצרים פתרונות מהלב &nbsp;|&nbsp; <span>תשפ"ו</span></p>
+  </footer>
+
+  <!-- DYNAMIC SLIDE DRAWER MODAL SYSTEM -->
+  <div class="drawer-backdrop" id="drawer-backdrop" onclick="closeDrawer()"></div>
+  <div class="slide-drawer" id="project-drawer">
+    <button class="drawer-close" onclick="closeDrawer()" title="סגור חלונית">
+      <i class="fa-solid fa-xmark" style="font-size:1.2rem"></i>
+    </button>
+    <div class="drawer-body">
+      <div class="drawer-header">
+        <div class="drawer-icon-box" id="dyn-icon-box">
+          <i class="fa-solid fa-book"></i>
+        </div>
+        <div class="drawer-titles">
+          <h2 id="dyn-title">שם הפרויקט</h2>
+          <div class="drawer-subtitle" id="dyn-subtitle">תת-כותרת</div>
+        </div>
+      </div>
+      
+      <!-- Alert Box for Development / Payment -->
+      <div id="dyn-alert-box" style="display:none; padding:14px; border-radius:14px; margin-bottom:25px; font-weight:600; font-size:0.92rem;"></div>
+
+      <div class="drawer-section-title">
+        <i class="fa-solid fa-circle-info"></i> אודות הפרויקט
+      </div>
+      <p class="drawer-desc" id="dyn-description">תיאור מורחב...</p>
+
+      <div class="drawer-section-title">
+        <i class="fa-solid fa-route"></i> מדריך שימוש והוראות
+      </div>
+      <div class="drawer-guide" id="dyn-guide">
+        <!-- List will be populated dynamically -->
+      </div>
+
+      <div class="drawer-actions" id="dyn-actions-container">
+        <!-- Buttons populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & DATABASE -->
+  <script>
+    // --- Project Database containing all 25 projects ---
+    const PROJECT_DATA = {
+      // 1. Dynamic Projects (18)
+      'torah-ai': {
+        title: 'מגיה תורני AI - החברותא',
+        subtitle: 'עריכה והגהה תורנית חכמה',
+        category: 'ext',
+        icon: 'fa-solid fa-book-open-reader',
+        colorClass: 'am',
+        description: 'תוסף החברותא הוא כלי פורץ דרך המשלב בינה מלאכותית מתקדמת ישירות בתוך דפדפן הכרום שלכם, ומיועד לעריכה, הגהה, פיסוק ושדרוג של טקסטים תורניים, הלכתיים וכלליים כאחד. הכלי נבנה במיוחד כדי לספק תוצאות מדויקות התואמות את רוח הספרות התורנית ויכול לפתוח ראשי תיבות מורכבים במיוחד בדיוק חסר תקדים.',
+        guide: '<ul><li><strong>התקנה מהירה:</strong> התקינו את התוסף מחנות התוספים של כרום (כעת בגישה ישירה דרך קובץ פיתוח במדריך).</li><li><strong>הזנת מפתח API:</strong> בהגדרות התוסף, הזינו את מפתח ה-API האישי שלכם לג\’מיני (Gemini API Key) לקבלת ביצועים מהירים וללא הגבלה.</li><li><strong>שימוש שוטף:</strong> סמנו כל טקסט בדפדפן, לחצו לחיצה ימנית ובחרו "ערוך עם החברותא", או השתמשו בחלונית הצדדית הנוחה לניסוח חופשי, תיקון שגיאות והגהה מהירה.</li></ul>',
+        links: [{ text: 'מעבר למדריך והתקנה <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/TorahAI/#guide', className: 'btn-primary' }]
+      },
+      'the-house': {
+        title: 'הבית לזוגות צעירים',
+        subtitle: 'הרב אביאל נריה',
+        category: 'web',
+        icon: 'fa-solid fa-house-chimney',
+        colorClass: 'te',
+        description: 'אתר רשמי ושער דיגיטלי מיוחד לפלטפורמת "הבית לזוגות צעירים" בהנהגת הרב אביאל נריה, מנחה ויועץ זוגי בעל שם. האתר מהווה ממשק נוח ומתקדם לגישה למאגר שלם של שיעורים, הרצאות, קבצי שמע ומסמכים תורניים מתוך תיקיות הדרייב המשותפות של חברי הקהילה.',
+        guide: '<ul><li><strong>הנווט בין הקטגוריות:</strong> השתמשו בתפריט העליון כדי לגשת לקטגוריות השיעורים השונות (שלום בית, חינוך ילדים, הלכה ועוד).</li><li><strong>סייר הקבצים:</strong> האתר משלב סייר תיקיות אינטראקטיבי המאפשר ניגון ישיר של קבצי שמע (MP3) וצפייה במסמכים ללא צורך בהורדתם למכשיר.</li><li><strong>הצטרפות לקהילה:</strong> בעמוד הבית תוכלו למצוא פרטי יצירת קשר עם מנהלי הקהילה להצטרפות וסנכרון מיילים.</li></ul>',
+        links: [{ text: 'כניסה לאתר הבית <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/The-house', className: 'btn-primary' }]
+      },
+      'habit-tracking': {
+        title: 'מעקב הרגלים אישי',
+        subtitle: 'ניהול סדר היום',
+        category: 'web',
+        icon: 'fa-solid fa-list-check',
+        colorClass: 'gn',
+        description: 'מערכת אינטראקטיבית ומתקדמת לניהול סדר היום הרוחני והאישי שלך. האפליקציה מאפשרת לעקוב אחר הרגלים יומיומיים חשובים כגון קביעות עיתים לתורה, תפילה במניין, לימוד יומי (דף היומי, רמב"ם וכדומה), התעמלות ושתיית מים. הכלי מסייע בבניית משמעת עצמית על ידי הצגת סטטיסטיקות התקדמות וגרפים ויזואליים של רצפים (Streaks).',
+        guide: '<ul><li><strong>הגדרת הרגלים:</strong> עם הכניסה הראשונית, תוכלו להוסיף את ההרגלים האישיים שברצונכם לאמץ ולעקוב אחריהם.</li><li><strong>סימון יומי:</strong> בכל ערב, היכנסו למערכת וסמנו "בוצע" על המשימות שעמדתם בהן.</li><li><strong>ניתוח ביצועים:</strong> עברו ללשונית "דוחות" כדי לראות את אחוזי העמידה ביעדים השבועיים והחודשיים שלכם ולזהות נקודות לשיפור.</li></ul>',
+        links: [{ text: 'כניסה למערכת המעקב <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/Habit-tracking/', className: 'btn-primary' }]
+      },
+      'purification-board': {
+        title: 'לוח טהרה',
+        subtitle: 'כלי עזר לבית היהודי',
+        category: 'web',
+        icon: 'fa-solid fa-calendar-check',
+        colorClass: 'bl',
+        description: 'כלי דיגיטלי אישי, דיסקרטי ומאובטח המיועד לניהול ומעקב אחר ימי הטהרה והחישובים הנדרשים בבית היהודי בהתאם להלכה הצרופה. האתר נבנה תוך הקפדה יתרה על אבטחת מידע מוחלטת - כל הנתונים נשמרים מקומית במכשיר המשתמש (Local Storage) ואינם מועלים לשום שרת אינטרנט חיצוני, מה שמבטיח שמירה מלאה על פרטיות המשתמשים.',
+        guide: '<ul><li><strong>רישום תאריכים:</strong> הזינו את התאריכים והשעות הלועזיים או העבריים בלוח האינטראקטיבי.</li><li><strong>חישוב אוטומטי:</strong> המערכת תחשב עבורכם את ימי הפרישה הנדרשים (עונה בינונית, וסת הפלגה, וסת החודש) ותציג התראות ברורות.</li><li><strong>שמירה מאובטחת:</strong> הנתונים שלכם פרטיים לחלוטין. מומלץ לבצע מדי פעם "גיבוי ידני לקובץ" מתוך תפריט ההגדרות כדי לשמור את המידע למקרה של החלפת דפדפן.</li></ul>',
+        links: [{ text: 'כניסה ללוח הטהרה <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/Purification-board/', className: 'btn-primary' }]
+      },
+      'you-tob': {
+        title: 'יו-טוב',
+        subtitle: 'חיפוש מסונן ביוטיוב',
+        category: 'web',
+        icon: 'fa-brands fa-youtube',
+        colorClass: 'rd',
+        alert: { type: 'danger', text: '<strong>שימו לב:</strong> פיתוח ותמיכה בפרויקט זה הופסקו זמנית. האתר זמין לצפייה ולשימוש בגרסתו הקיימת אך לא יקבל עדכוני אבטחה או תכונות חדשות בשלב זה.' },
+        description: 'מנוע חיפוש וממשק צפייה מסונן ומבוקר ביוטיוב. המערכת מיועדת לאפשר חיפוש חופשי של תכנים ביוטיוב תוך בדיקה אוטומטית מול ספקי הסינון המובילים (כגון נטפרי), ומציגה אך ורק סרטונים שאושרו ופתוחים לצפייה בסינון של המשתמש. כלי נהדר למניעת היתקלות בסרטונים חסומים במהלך חיפושים שגרתיים.',
+        guide: '<ul><li><strong>ביצוע חיפוש:</strong> הזינו מילות מפתח בתיבת החיפוש הראשית של האתר.</li><li><strong>סינון מוקדם:</strong> תוצאות החיפוש יעברו בדיקה בזמן אמת. סרטונים שאינם פתוחים בסינון יסומנו או יוסתרו אוטומטית.</li><li><strong>צפייה בטוחה:</strong> לחיצה על סרטון תפתח אותו בממשק נקי ומרוקן מהמלצות צדדיות ותגובות לא מבוקרות.</li></ul>',
+        links: [{ text: 'מעבר לחיפוש יו-טוב <i class="fa-solid fa-arrow-left"></i>', url: 'https://sr7c.github.io/You-tob/', className: 'btn-primary' }]
+      },
+      'jewish-home': {
+        title: 'פורום הבית היהודי',
+        subtitle: 'לוח שיעורים ומאמרים',
+        category: 'web',
+        icon: 'fa-solid fa-landmark-dome',
+        colorClass: 'in',
+        description: 'אתר הבית והמאגר הרשמי של פורום "הבית היהודי". הפלטפורמה מרכזת ומנגישה בצורה מסודרת ויפהפה את כל ספריית הדרייב המשותפת של הפורום הכוללת מאות מאמרים תורניים, סיכומי שיעורים, קבצי הלכה, והקלטות שמע תורניות יקרות ערך לחינוך, שלום בית ויראת שמיים.',
+        guide: '<ul><li><strong>ספריית המאמרים:</strong> עברו ללשונית "מאמרים" כדי לקרוא ולהוריד מסמכים הלכתיים ותורניים שנכתבו על ידי רבני הפורום.</li><li><strong>לוח זמני שיעורים:</strong> בדף הבית מופיע לוח שבועי מעודכן של שיעורי תורה בשידור חי ובטלפון, כולל מספרי גישה ישירים.</li><li><strong>חיפוש מהיר:</strong> השתמשו בתיבת החיפוש בראש הדף כדי לאתר תוך שניות נושא הלכתי או רב ספציפי מתוך כל המאגר.</li></ul>',
+        links: [{ text: 'כניסה לאתר הפורום <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/The-Jewish-Home/', className: 'btn-primary' }]
+      },
+      'word-rain': {
+        title: 'גשם של מילים',
+        subtitle: 'אימון הקלדה עיוורת',
+        category: 'web',
+        icon: 'fa-solid fa-keyboard',
+        colorClass: 'cy',
+        description: 'משחק דפדפן ממכר, מהיר וחווייתי שנוצר במיוחד כדי לאמן ולשפר את מהירות ודיוק ההקלדה שלכם בשפה העברית בשיטה עיוורת (מבלי להביט במקלדת). המשחק מתאים לכל הגילאים - מתלמידים ועד לאנשי מקצוע שרוצים לשפר את יעילות העבודה שלהם מול המחשב.',
+        guide: '<ul><li><strong>תחילת המשחק:</strong> לחצו על "שחק עכשיו" ובחרו את רמת הקושי שלכם (קל, בינוני, קשה).</li><li><strong>חוקי המשחק:</strong> מילים בעברית יתחילו לרדת מראש המסך כמו גשם. תפקידכם להקליד במקלדת את המילה במדויק וללחוץ על Enter לפני שהיא מגיעה לתחתית המסך.</li><li><strong>צבירת נקודות:</strong> כל הקלדה נכונה תעניק לכם נקודות ותעלה את רמת המהירות. הקלדה שגויה או פספוס של מילים יורידו לכם מד חיים. נסו לשבור את שיא הנקודות!</li></ul>',
+        links: [{ text: 'שחק עכשיו בדפדפן <i class="fa-solid fa-gamepad"></i>', url: 'https://ketertorah.co.il/%D7%91%D7%9E%D7%94-%D7%9C%D7%99%D7%95%D7%A6%D7%A8%D7%99%D7%9D/%D7%94%D7%A7%D7%9C%D7%93%D7%94-%D7%A2%D7%95%D7%95%D7%A8%D7%AA.html', className: 'btn-primary' }]
+      },
+      'torah-code': {
+        title: 'צפונות התורה - AI',
+        subtitle: 'גילוי קודים ודילוגי אותיות',
+        category: 'web',
+        icon: 'fa-solid fa-scroll',
+        colorClass: 'li',
+        alert: { type: 'warning', text: '<strong>שלב פיתוח:</strong> מערכת זו נמצאת כעת בפיתוח פעיל. ייתכנו שינויים בממשק המשתמש ותכונות חדשות יתווספו באופן תדיר.' },
+        description: 'פרויקט מחקר תורני-טכנולוגי חדשני המשלב אלגוריתמים מתקדמים של דילוגי אותיות (Torah Codes) יחד עם מנועי בינה מלאכותית (AI) מודרניים. המערכת סורקת את חמשת חומשי התורה ומאפשרת לאתר מילים, ביטויים ותאריכים נסתרים בדילוגי אותיות מתמטיים מדויקים, ומציגה אותם על גבי לוח תלת-ממדי ויזואלי ומרהיב תוך ניתוח ההקשר הפסוקי בעזרת ה-AI.',
+        guide: '<ul><li><strong>חיפוש ביטויים:</strong> הזינו מילה או ביטוי בעברית בתיבת החיפוש האלגוריתמית.</li><li><strong>הגדרת טווח דילוגים:</strong> קבעו את טווח הדילוגים המינימלי והמקסימלי לסריקה (לדוגמה, דילוג של בין 2 ל-1000 אותיות).</li><li><strong>ניתוח ויזואלי:</strong> המערכת תסמן את האותיות המוצלבות בתוך טקסט התורה ותאפשר לכם לצפות בתוצאה המלאה כולל פסוקים מקבילים ופירושם על ידי הבינה המלאכותית.</li></ul>',
+        links: [{ text: 'כניסה למערכת המחקר <i class="fa-solid fa-arrow-left"></i>', url: 'https://xsx-x.github.io/The-Torah-Code/', className: 'btn-primary' }]
+      },
+      'transcriber': {
+        title: 'מתמלל AI',
+        subtitle: 'תמלול קבצי שמע והקלטות',
+        category: 'web',
+        icon: 'fa-solid fa-microphone-lines',
+        colorClass: 'bl',
+        description: 'מערכת מקיפה המבוססת על מודלי עיבוד שמע ובינה מלאכותית מתקדמים, המיועדת להפוך הקלטות קוליות, שיעורי תורה, ראיונות וקבצי שמע (MP3, WAV וכדומה) לטקסט כתוב, מדויק ומפוסק בעברית בצורה מהירה ביותר. המערכת מונגשת בשתי גרסאות שונות כדי להתאים לצרכים השונים שלכם.',
+        guide: '<ul><li><strong>הגרסה החכמה (API Key):</strong> גרסת פרימיום הפועלת ישירות מהדפדפן שלך. בהזנת מפתח API אישי של ג\’מיני (הניתן להפקה בחינם), תקבלו את המודלים החזקים והחכמים ביותר שמסוגלים להתמודד עם רעשי רקע, מבטאים שונים וקולות מרובים בדיוק מדהים וללא הגבלת אורך.</li><li><strong>האפליקציה הציבורית (Gemini Share):</strong> פתרון מהיר ופשוט ללא צורך בהגדרות או מפתחות. שימוש במודל בסיסי ציבורי המאפשר העלאת קבצים קצרים ותמלול מהיר בקליק.</li></ul>',
+        links: [
+          { text: 'כניסה לגרסה החכמה (API) <i class="fa-solid fa-key"></i>', url: 'https://lev-good.github.io/Transcriber/', className: 'btn-primary' },
+          { text: 'מעבר לאפליקציה הציבורית <i class="fa-solid fa-share-nodes"></i>', url: 'https://gemini.google.com/share/ecdacb9f11b6', className: 'btn-secondary' }
+        ]
+      },
+      'working-time': {
+        title: 'זמן עבודה',
+        subtitle: 'מעקב שעות עבודה חכם',
+        category: 'web',
+        icon: 'fa-solid fa-business-time',
+        colorClass: 'te',
+        alert: { type: 'warning', text: '<strong>שימו לב:</strong> המערכת נמצאת כעת בשלבי פיתוח פעילים. בשלב זה, שמירת הנתונים בענן אינה פעילה והנתונים נשמרים זמנית בדפדפן בלבד (חיבור מלא למסד נתונים מאובטח של Firebase וסנכרון ענן מלא נמצאים כעת בשלבי פיתוח).' },
+        description: 'מערכת דיגיטלית מתקדמת, מעוצבת ונוחה במיוחד למעקב וניהול שעות העבודה השוטפות שלכם. המערכת כוללת שעון נוכחות אינטראקטיבי (כניסה/יציאה), חישוב שכר אוטומטי המבוסס על תעריף שעתי, הגדרת שעות נוספות (125%, 150%), והפקת דוחות עבודה מפורטים לפי חודשים ותקופות ייעודיות.',
+        guide: '<ul><li><strong>הגדרת פרופיל:</strong> הזינו את התעריף השעתי שלכם ואת תנאי העסקתכם (שעות נוספות, נסיעות וכדומה).</li><li><strong>רישום שעות:</strong> השתמשו בכפתור "כניסה" בתחילת יום העבודה ובכפתור "יציאה" בסופו, או הזינו שעות ידנית בכל עת בלוח השעות.</li><li><strong>דוחות ושכר:</strong> עברו לעמוד הדוחות כדי לראות בדיוק כמה שעות עבדתם החודש, מהו השכר הצפוי שלכם וייצאו את הדוח בפורמט מסודר.</li></ul>',
+        links: [{ text: 'כניסה לאתר זמן עבודה <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/Working-time/', className: 'btn-primary' }]
+      },
+      'tips-economics': {
+        title: 'טיפים לכלכלה נכונה',
+        subtitle: 'צרכנות חכמה וניהול תקציב',
+        category: 'web',
+        icon: 'fa-solid fa-coins',
+        colorClass: 'gn',
+        alert: { type: 'warning', text: '<strong>שלב פיתוח:</strong> האתר בשלבי פיתוח תוכן וכלים. מחשבון תקציב מורחב יתווסף בקרוב.' },
+        description: 'אתר תוכן ייחודי, אינטראקטיבי ומעשיר המרכז כלים מעשיים, טיפים מועילים ועצות פיננסיות מומחים לניהול תקציב המשפחה והבית ברוח התורה וההלכה. האתר נבנה מתוך שליחות לסייע למשפחות בציבור הדתי והחרדי לבצע צרכנות נבונה, לתכנן תקציב חודשי נכון, ולהימנע מחובות מיותרים באמצעות כלים דיגיטליים פשוטים לשימוש.',
+        guide: '<ul><li><strong>מאגר המאמרים:</strong> קראו מאמרי העשרה קצרים בנושאי קניות בסופרמרקט, ניהול חשבונות בנק, חיסכון בחשמל והוצאות שבת וחגים.</li><li><strong>כלים אינטראקטיביים:</strong> השתמשו במחשבון התקציב המהיר בעמוד הבית כדי לקבל הערכה ראשונית על יחס ההכנסות וההוצאות שלכם.</li><li><strong>קבלת עדכונים:</strong> תוכלו להירשם לקבלת טיפ שבועי קצר ישירות לתיבת המייל שלכם.</li></ul>',
+        links: [{ text: 'כניסה לאתר כלכלה נכונה <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/Tips-for-good-economics/', className: 'btn-primary' }]
+      },
+      'youtube-extension': {
+        title: 'תוסף יוטיוב מסונן',
+        subtitle: 'שמירת סרטונים למסד אישי',
+        category: 'ext',
+        icon: 'fa-brands fa-youtube',
+        colorClass: 'rd',
+        alert: { type: 'danger', text: '<strong>שימו לב:</strong> פיתוח ותמיכה בתוסף זה הופסקו זמנית. התוסף זמין להורדה מחנות הכרום כפי שהוא אך לא יקבל עדכוני תוכנה בשלב זה.' },
+        description: 'תוסף מתקדם לדפדפן כרום המאפשר למשתמשים ליצור לעצמם מסד נתונים וספריית סרטונים אישית של סרטוני יוטיוב שנצפו ואושרו על ידם. התוסף מתעד אוטומטית סרטונים שעמדו בתנאי הסינון של המשתמש ומאפשר חיפוש וסינון פנימי מהיר בממשק מרהיב, כדי לחזור ולצפות בהם בקלות ללא חשש.',
+        guide: '<ul><li><strong>התקנת התוסף:</strong> לחצו על כפתור "לחנות הכרום" והתקינו את התוסף לדפדפן שלכם.</li><li><strong>הרצת סנכרון:</strong> התוסף יפעל ברקע בזמן הגלישה ביוטיוב ויתעד את הסרטונים הפתוחים והמאושרים שצפיתם בהם.</li><li><strong>ממשק החיפוש:</strong> לחצו על סמל התוסף בדפדפן כדי לפתוח את לוח הבקרה האישי שלכם, לחפש בסרטונים השמורים ולצפות בהם בבטחה.</li></ul>',
+        links: [{ text: 'לחנות הכרום <i class="fa-brands fa-chrome"></i>', url: 'https://chromewebstore.google.com/detail/%D7%99%D7%95%D7%98%D7%99%D7%95%D7%91-%D7%9E%D7%A1%D7%95%D7%A0%D7%9F/mmbcknelibfgknmdppoapmpfkbfbempa', className: 'btn-primary' }]
+      },
+      'daily-strengthening': {
+        title: 'התחזקות יומית',
+        subtitle: 'תכנים תורניים בדפדפן',
+        category: 'ext',
+        icon: 'fa-solid fa-book-open',
+        colorClass: 'or',
+        alert: { type: 'danger', text: '<strong>שימו לב:</strong> פיתוח ותמיכה בתוסף זה הופסקו זמנית. התוסף זמין להורדה מחנות הכרום כפי שהוא אך לא יקבל עדכוני תוכנה בשלב זה.' },
+        description: 'תוסף ייחודי המיועד להעשיר את יומכם בתכנים רוחניים ותורניים ישירות בתוך דפדפן הכרום. התוסף מציג בכל יום בצורה מעוצבת ונעימה הלכה יומית קצרה, מסר מחזק של אמונה וביטחון, ופסוקים נבחרים, ומסייע לשמור על קשר רוחני קבוע גם במהלך יום העבודה מול המחשב.',
+        guide: '<ul><li><strong>התקנת התוסף:</strong> התקינו את התוסף מחנות הכרום של גוגל.</li><li><strong>חלון יומי:</strong> עם פתיחת הדפדפן בפעם הראשונה בכל יום, יקפוץ חלון מעוצב וקצר עם הלכת היום ומסר של התחזקות.</li><li><strong>הגדרות אישיות:</strong> תוכלו לקבוע בהגדרות התוסף את שעת קפיצת החלון ואת סגנון התכנים המועדף עליכם (ספרדי/אשכנזי, הלכה/מוסר).</li></ul>',
+        links: [{ text: 'לחנות הכרום <i class="fa-brands fa-chrome"></i>', url: 'https://chromewebstore.google.com/detail/%D7%94%D7%AA%D7%A7%D7%96%D7%A7%D7%95%D7%AA-%D7%99%D7%95%D7%9D%D7%99%D7%AA/jgpakkbdijcfkajakcokhilcdkodcjkk', className: 'btn-primary' }]
+      },
+      'notes-extension': {
+        title: 'תוסף פתקים',
+        subtitle: 'ניהול משימות בדפדפן',
+        category: 'ext',
+        icon: 'fa-solid fa-note-sticky',
+        colorClass: 'ye',
+        description: 'תוסף פתקים ומשימות רב-תכליתי, מהיר ואינטואיטיבי המובנה ישירות בתוך הדפדפן שלכם. הכלי נועד להחליף את הפתקים הפיזיים על המסך ומאפשר כתיבת רשימות, תזכורות חכמות, רשימות תיוג (To-Do) ואף תומך במנגנון מדהים של הכתבה קולית חכמה (שממירה את קולכם לטקסט מודפס בשניות).',
+        guide: '<ul><li><strong>הורדת התוסף:</strong> התקינו את התוסף מחנות הכרום הרשמית.</li><li><strong>יצירת פתק חדש:</strong> לחצו על סמל הפתק בדפדפן ולחצו על כפתור "+" כדי לפתוח פתק חדש. תוכלו לבחור צבע רקע לפתק כדי לקטלג נושאים.</li><li><strong>הכתבה קולית:</strong> לחצו על אייקון המיקרופון בתוך הפתק והתחילו לדבר. המערכת תתמלל את הדיבור שלכם לטקסט מודפס בתוך הפתק בזמן אמת!</li><li><strong>שמירה אוטומטית:</strong> כל הפתקים נשמרים אוטומטית ומסונכרנים בדפדפן שלכם, כך שלא תאבדו שום משימה חשובה.</li></ul>',
+        links: [{ text: 'צפה בתוסף בחנות <i class="fa-brands fa-chrome"></i>', url: 'https://chromewebstore.google.com/detail/%D7%A4%D7%A7%D7%99%D7%9D/gfmedklhbigocfldmpmincakpbneiohp', className: 'btn-primary' }]
+      },
+      'email-survey': {
+        title: 'מדריך לסקרים במייל',
+        subtitle: 'פתרון חכם למשתמשי סינון',
+        category: 'auto',
+        icon: 'fa-solid fa-square-poll-vertical',
+        colorClass: 'in',
+        description: 'מדריך טכני ייחודי ומפורט המלמד כיצד להקים מערכת סקרים, שאלונים וטפסים שלמה הפועלת ישירות מתוך תיבת הדואר האלקטרוני (מייל) של המשתמשים, ללא צורך בכניסה לאתרי אינטרנט חיצוניים. פתרון מדהים ויצירתי במיוחד המותאם למשתמשי סינון מחמיר (שחלק מאתרי הסקרים כמו Google Forms חסומים עבורם).',
+        guide: '<ul><li><strong>התבנית הבסיסית:</strong> המדריך יסביר לכם כיצד לעצב גוף מייל המכיל אפשרויות בחירה (קישורים) מעוצבות בצורה של כפתורים.</li><li><strong>חיבור ל-Google Sheets:</strong> תלמדו כיצד לחבר את הלחיצות של המשיבים לגיליון גוגל שיטס אינטרנטי באמצעות סקריפט קצר ופשוט של Google Apps Script.</li><li><strong>ניתוח תשובות:</strong> תקבלו סקריפט מוכן המרכז ומנתח את כל התשובות והלחיצות של המשתמשים ישירות בגיליון שלכם בזמן אמת.</li></ul>',
+        links: [{ text: 'מעבר למדריך המלא <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/Email-Survey-Guide/', className: 'btn-primary' }]
+      },
+      'email-bot': {
+        title: 'מזכיר AI במייל',
+        subtitle: 'ניהול והשבה אוטומטית',
+        category: 'auto',
+        icon: 'fa-regular fa-envelope',
+        colorClass: 'bl',
+        description: 'מערכת אוטומציה שלמה מבוססת בינה מלאכותית (AI) הפועלת בתוך תיבת הדואר האלקטרוני שלכם. המערכת סורקת מיילים נכנסים, מסווגת אותם לפי דחיפות ונושא, מספקת סיכומים קצרים למיילים ארוכים ומורכבים, ואף מסוגלת להציע טיוטות תשובה או להשיב אוטומטית בהתאם לכללים שהגדרתם מראש.',
+        guide: '<ul><li><strong>חיבור המערכת:</strong> התקינו את הסקריפט (Google Apps Script) בתיבת הג\’מייל שלכם בהתאם להנחיות במדריך.</li><li><strong>הגדרת הנחיות (System Prompt):</strong> קבעו את אופי המענה של הבוט (למשל: סגנון רשמי, מנומס, מענה קצר) ואת מפתח ה-API האישי שלכם.</li><li><strong>פעולה אוטומטית:</strong> הבוט ירוץ ברקע. מיילים חדשים שיכנסו יסומנו בתוויות מתאימות (לטיפול, אושר אוטומטית, סיכום AI) ויקבלו מענה בהתאם לצורך.</li></ul>',
+        links: [{ text: 'מעבר לפרטים והפעלה <i class="fa-solid fa-arrow-left"></i>', url: 'https://xsx-x.github.io/EmailBot/', className: 'btn-primary' }]
+      },
+      'wikimail': {
+        title: 'ויקימייל',
+        subtitle: 'מידע מויקיפדיה דרך המייל',
+        category: 'auto',
+        icon: 'fa-solid fa-book-atlas',
+        colorClass: 'in',
+        alert: { type: 'warning', text: '<strong>שלב פיתוח:</strong> השירות נמצא כעת בהרצה ניסיונית. ייתכנו עיכובים קלים בזמני המענה של המערכת.' },
+        description: 'מערכת אוטומטית חדשנית המאפשרת למשתמשים בעלי גישה לדואר אלקטרוני בלבד (ללא חיבור דפדפן אינטרנט חופשי או למשתמשים תחת סינונים מחמירים במיוחד) לחפש ולקבל ערכי ויקיפדיה שלמים, מסודרים ומנוקים מתכנים לא ראויים ישירות לתיבת המייל האישית שלهم בתוך שניות.',
+        guide: '<ul><li><strong>שליחת בקשה:</strong> שלחו מייל חדש לכתובת השירות `myylbwt@gmail.com` עם הנושא: `ויקימייל`.</li><li><strong>תוכן המייל:</strong> בגוף המייל, כתבו את שם הערך המדויק שברצונכם לחפש (לדוגמה: "רש\"י" או "ירושלים").</li><li><strong>קבלת הערך:</strong> המערכת תבצע שליפה מהירה מויקיפדיה, תנקה קבצים מיותרים ותשלח לכם מייל חוזר המכיל את הערך המלא והמעוצב בתוך שניות ספורות.</li></ul>',
+        links: [{ text: 'שילחו מייל להצטרפות <i class="fa-solid fa-envelope"></i>', url: 'mailto:myylbwt@gmail.com?subject=ויקימייל', className: 'btn-primary' }]
+      },
+      'file-extractor': {
+        title: 'מחלץ קבצים מהמייל',
+        subtitle: 'שמירה אוטומטית לדרייב',
+        category: 'auto',
+        icon: 'fa-solid fa-file-zipper',
+        colorClass: 'rd',
+        alert: { type: 'warning', text: '<strong>שירות בתשלום:</strong> סקריפט מורכב זה כולל רישיון שימוש והתקנה מודרכת. לפרטים ורכישה יש לעיין במדריך או לפנות במייל.' },
+        description: 'סקריפט אוטומציה מקיף, מקצועי ומתקדם במיוחד (Google Apps Script). המערכת שואבת ומחלצת אוטומטית קבצים מצורפים מכל מייל נכנס בתיבת הג\’מייל שלכם (כמו חשבוניות, קבלות, תמונות, מסמכים) ושומרת אותם בצורה מאורגנת ומסודרת בתיקיות ייעודיות בגוגל דרייב שלכם בהתאם לכללי סינון מוגדרים מראש (לפי שולח, נושא או שם קובץ).',
+        guide: '<ul><li><strong>הגדרת כללים:</strong> תוכלו לקבוע כי כל קובץ PDF שמגיע משולח מסוים יישמר בתיקייה בשם "חשבוניות 2026", וקבצי שמע יישמרו בתיקייה "הקלטות".</li><li><strong>ארכוב ומחיקה:</strong> הסקריפט מאפשר סימון המיילים כ"נקראו" או ארכובם לאחר החילוץ המוצלח כדי לשמור על תיבת מייל ריקה ומסודרת (Inbox Zero).</li><li><strong>יומן רישום:</strong> המערכת מפיקה גיליון גוגל שיטס המתעד בדיוק איזה קובץ חולץ, מאיזה מייל ובאיזו שעה, לצורך מעקב ובקרה מלאים.</li></ul>',
+        links: [{ text: 'למדריך המלא <i class="fa-solid fa-arrow-left"></i>', url: 'https://lev-good.github.io/A-guide-to-a-script-for-extracting-files-from-email/', className: 'btn-primary' }]
+      },
+
+      // 2. Static Redesigned Projects (7)
+      'shomer': {
+        title: 'מערכת \'שומר\'',
+        subtitle: 'חיזוק אישי ותיעוד הצלחות',
+        category: 'web',
+        icon: 'fa-solid fa-shield-halved',
+        colorClass: 'pu',
+        alert: { type: 'danger', text: '<strong>שימו לב:</strong> פיתוח ותמיכה בפרויקט זה הופסקו זמנית. האתר זמין לשימוש בגרסתו הקיימת אך לא יקבל עדכוני תוכנה בשלב זה.' },
+        description: 'מערכת מתקדמת לחיזוק אישי ותיעוד הצלחות בהתמודדויות היומיום. המערכת מסונכרנת באופן מלא בין אפליקציה מעוצבת למענה טלפוני אינטראקטיבי (077-4080-739) לרישום מהיר של עמידה בניסיונות ושימור מוטיבציה.',
+        guide: '<ul><li><strong>מה הקטע?</strong> אנחנו מתחזקים ב"ה לפחות כמה פעמים ביום, אבל לא זוכרים כל כך את ההצלחות, ואת הכישלונות זוכרים הרבה יותר טוב... שמעתי פעם על רעיון נפלא לספור ולשמור את הניצחונות הקטנים שלנו וכך לצבור סיפוק אדיר במשך הזמן. בשביל זה יצרתי את מערכת \'שומר\'.</li><li><strong>שילוב מערכות:</strong> אפשר להשתמש אך ורק באפליקציה, או אך ורק במערכת הטלפונית, וניתן גם לסנכרן ולשלב בין השתיים באופן מלא!</li><li><strong>חיוג לקו ניהול (077-4080-739):</strong> שלוחה 1: הרשמה | שלוחה 2: שמיעת הנתונים האישיים | שלוחה 3: קביעת יעד אישי.</li></ul>',
+        links: [
+          { text: 'הורדת האפליקציה <i class="fa-solid fa-download"></i>', url: 'https://apk.shnet.app/assets/uploads/files/1775677849063-%D7%A9%D7%95%D7%9E%D7%A8.apk', className: 'btn-primary' },
+          { text: 'כניסה מהדפדפן <i class="fa-solid fa-globe"></i>', url: 'https://neon-cupcake-416253.netlify.app/', className: 'btn-secondary' }
+        ]
+      },
+      'drive': {
+        title: 'מעתיק דרייב',
+        subtitle: 'העתקת תיקיות שלמות בגוגל דרייב בקליק',
+        category: 'ext',
+        icon: 'fa-brands fa-google-drive',
+        colorClass: 'te',
+        description: 'תוסף ייחודי וקל משקל לדפדפן כרום הפותר את אחת המגבלות המוכרות של Google Drive: אי-היכולת להעתיק תיקייה שלמה על כל תת-התיקיות והקבצים שבתוכה. התוסף מאפשר לעשות זאת בקליק אחד פשוט ויוצר עותק מושלם ומאורגן בחשבון שלכם.',
+        guide: '<ul><li><strong>התקנה מהירה:</strong> התקינו את התוסף מחנות התוספים של כרום.</li><li><strong>פעולה פשוטה:</strong> בעת גלישה בגוגל דרייב, לחצו לחיצה ימנית על התיקייה שברצונכם להעתיק, ובחרו באפשרות "העתק תיקייה שלמה".</li><li><strong>ניהול העתקה:</strong> התוסף יעבוד ברקע, ישכפל את מבנה התיקיות ויעתיק את כל הקבצים בצורה מסודרת לתוך הדרייב שלכם.</li></ul>',
+        links: [{ text: 'להורדה מחנות כרום <i class="fa-brands fa-chrome"></i>', url: 'https://chromewebstore.google.com/detail/%D7%9E%D7%A5%D7%AA%D7%99%D7%A7-%D7%93%D7%A8%D7%99%D7%99%D7%91/jofhdbdhbipigolppfljjepkigdfkddm', className: 'btn-primary' }]
+      },
+      'gmail-extractor': {
+        title: 'מחלץ כתובות ג\'ימייל API Pro',
+        subtitle: 'סריקה וייצוא אנשי קשר מהמייל',
+        category: 'ext',
+        icon: 'fa-solid fa-at',
+        colorClass: 'pu',
+        description: 'תוסף כרום מורחב ומתקדם במיוחד הסורק את כל תיבת הג\’מייל שלכם, מסנן ומחלץ כתובות אימייל מתוך כותרות הנמענים או ישירות מגוף המייל, ומייצא אותן בצורה מסודרת לרשימת אנשי הקשר של גוגל לצורך יצירת קבוצות תפוצה ורשימות דיוור.',
+        guide: '<ul><li><strong>סריקה חכמה:</strong> הגדירו סריקה לפי תאריכים, תוויות או שולחים מוגדרים.</li><li><strong>סינון מתקדם:</strong> התוסף מזהה ומנקה אוטומטית כתובות כפולות, לא תקינות או מיילים של מערכות ספאם.</li><li><strong>ייצוא מהיר:</strong> ייצאו את הרשימה המוכנה לקובץ CSV או סנכרנו ישירות לקבוצת אנשי קשר חדשה בגוגל.</li></ul>',
+        links: [{ text: 'התקנת התוסף מהחנות <i class="fa-brands fa-chrome"></i>', url: 'https://chromewebstore.google.com/detail/%D7%9E%D7%97%D7%9C%D7%A5-%D7%9B%D7%AA%D7%95%D7%91%D7%95%D7%AA-%D7%92%D7%99%D7%9E%D7%99%D7%99%D7%9C-api-pr/pjapbkgjfbpdneopcmimbnbfeebdcadh', className: 'btn-primary' }]
+      },
+      'fv': {
+        title: 'פול ווליום',
+        subtitle: 'ערוץ מוזיקה חסידית רשמי',
+        category: 'web',
+        icon: 'fa-solid fa-headphones-simple',
+        colorClass: 'rd',
+        description: 'ערוץ מוזיקה חסידית ואתר רשמי המשלב סנכרון ישיר של סרטונים מיוטיוב וסייר קבצים מתקדם המאפשר שמיעה, ניגון והורדה מהירה של קבצי שמע (MP3) ישירות מתוך תיקיות הדרייב המשותפות של הערוץ.',
+        guide: '<ul><li><strong>נגן שמע מובנה:</strong> האזינו לשירי מוזיקה חסידית מובחרים וחדשים ישירות מהאתר.</li><li><strong>סייר הדרייב:</strong> גלשו בתיקיות מאורגנות ומסודרות לפי סגנונות וזמרים, והורידו קבצים למכשיר שלכם ללא שום הגבלה.</li><li><strong>הצטרפות לניוזלטר:</strong> תוכלו להירשם לקבלת שיר חדש מומלץ ישירות למייל שלכם בכל שבוע.</li></ul>',
+        links: [{ text: 'כניסה לאתר פול ווליום <i class="fa-solid fa-arrow-left"></i>', url: 'https://mytovmail.github.io/Full-volume/#drive', className: 'btn-primary' }]
+      },
+      'podcast': {
+        title: 'פודקאסט למייל',
+        subtitle: 'שליחת פרקי פודקאסט אוטומטית',
+        category: 'auto',
+        icon: 'fa-solid fa-podcast',
+        colorClass: 'or',
+        description: 'סקריפט אוטומציה חכם ויעיל (Google Apps Script) המאפשר לקבל פרקים חדשים של כל פודקאסט שתבחרו (באמצעות RSS Feed) ישירות לתיבת המייל האישית שלכם בקובצי שמע (MP3) נוחים להורדה, ללא צורך באפליקציות מיוחדות.',
+        guide: '<ul><li><strong>חיבור המערכת:</strong> פתחו את הסקריפט בגוגל Apps Script בהתאם להנחיות במדריך.</li><li><strong>הזנת ה-RSS:</strong> הזינו את קישור ה-RSS של הפודקאסט המבוקש ואת כתובת האימייל שלכם.</li><li><strong>ריצה אוטומטית:</strong> הסקריפט יפעל ברקע פעם ביום. בכל פעם שיופץ פרק חדש בפודקאסט, תקבלו מייל עם קובץ השמע שלו!</li></ul>',
+        links: [{ text: 'למדריך המלא בגיטהאב <i class="fa-solid fa-arrow-left"></i>', url: 'https://mytovmail.github.io/Podcast-database/admin.html', className: 'btn-primary' }]
+      },
+      'birthday-reminders': {
+        title: 'תזכורות לאירועים במייל',
+        subtitle: 'ימי הולדת ותאריכים עבריים',
+        category: 'auto',
+        icon: 'fa-solid fa-cake-candles',
+        colorClass: 'rd',
+        description: 'מערכת אוטומטית משפחתית חכמה השולחת תזכורות מעוצבות לאירועים משפחתיים, ימי הולדת וימי זיכרון משפחתיים במייל לפי התאריך העברי של האירוע, המחושב אוטומטית בכל שנה מחדש על פי לוח השנה היהודי.',
+        guide: '<ul><li><strong>טבלת אירועים:</strong> מלאו את שמות בני המשפחה ותאריכי הלידה העבריים שלהם בגיליון Google Sheets ייעודי.</li><li><strong>סנכרון הסקריפט:</strong> חברו את הסקריפט לטבלה שלכם והגדירו הרצת לילה יומית.</li><li><strong>תזכורת מעוצבת:</strong> בכל בוקר בו חל אירוע עברי משפחתי, המערכת תשלח לכם מייל תזכורת מעוצב וחגיגי.</li></ul>',
+        links: [{ text: 'מעבר למדריך בגיטהאב <i class="fa-solid fa-arrow-left"></i>', url: 'https://script.google.com/home/projects/101l8PRNXcEhedNgiPHkOWmA8H2fM5HCsgg9TdOsGRcBLmuLJGHATslq5/edit', className: 'btn-primary' }]
+      },
+      'ai': {
+        title: 'יצירת תמונות AI במייל',
+        subtitle: 'סטודיו אישי עם סינון מוקפד',
+        category: 'auto',
+        icon: 'fa-solid fa-wand-magic-sparkles',
+        colorClass: 'gn',
+        description: 'מערכת אינטראקטיבית ליצירת תמונות מרהיבות בבינה מלאכותית ישירות למייל. המערכת כוללת מסנן תוכן מוקפד ומחמיר במיוחד (למשל מניעת יצירת נשים כלל וכלל) ומאפשרת ליהנות מכלי ה-AI בצורה נקייה וראויה לכל בית יהודי.',
+        guide: '<ul><li><strong>שליחת בקשה:</strong> שלחו מייל חדש עם התיאור של התמונה (Prompt) שברצונכם ליצור.</li><li><strong>סיווג וסינון:</strong> המערכת תנתח את התיאור. אם הוא עומד בכללי הסינון המחמירים, היא תרנדר את התמונה בשרת.</li><li><strong>קבלת התוצאה:</strong> תוך פחות מדקה תקבלו מייל חוזר המכיל את התמונה המרהיבה כקובץ מצורף באיכות גבוהה.</li></ul>',
+        links: [{ text: 'לשליחת מייל להצטרפות <i class="fa-regular fa-envelope"></i>', url: 'mailto:myylbwt@gmail.com?subject=בקשת הצטרפות ליצירת תמונות AI במייל', className: 'btn-primary' }]
+      }
+    };
+
+    // --- Dynamic Card Rendering ---
+    function renderBentoCards(filter = 'all') {
+      const container = document.getElementById('bento-portfolio');
+      container.innerHTML = '';
+      
+      let count = 0;
+      for (const [id, p] of Object.entries(PROJECT_DATA)) {
+        if (filter !== 'all' && p.category !== filter) continue;
+        
+        const card = document.createElement('div');
+        // Let's make every 5th card a "wide" card for that premium organic Bento layout feel!
+        const isWide = count % 4 === 0 ? ' wide' : '';
+        card.className = `bento-card ${p.colorClass}${isWide}`;
+        card.setAttribute('onclick', `showProjectDetail('${id}')`);
+        
+        let badgeHtml = '';
+        if (p.alert && p.alert.text.includes('הופסקה')) {
+          badgeHtml = '<span class="card-badge" style="color:#ef4444; border-color:rgba(239,68,68,0.2)">הופסק זמנית</span>';
+        } else if (p.alert && p.alert.text.includes('פיתוח')) {
+          badgeHtml = '<span class="card-badge" style="color:var(--gold); border-color:var(--gold-glow)">בפיתוח</span>';
+        } else if (p.alert && p.alert.text.includes('בתשלום')) {
+          badgeHtml = '<span class="card-badge" style="color:#f59e0b; border-color:rgba(245,158,11,0.2)">בתשלום</span>';
+        } else {
+          badgeHtml = `<span class="card-badge">${p.category === 'web' ? 'מערכת' : p.category === 'ext' ? 'תוסף' : 'אוטומציה'}</span>`;
+        }
+        
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="card-header-meta">
+              <div class="card-icon-box">
+                <i class="${p.icon}"></i>
+              </div>
+              ${badgeHtml}
+            </div>
+            <h3>${p.title}</h3>
+            <div class="card-subtitle">${p.subtitle}</div>
+            <p class="card-text">${p.description.substring(0, 140)}...</p>
+          </div>
+          <div class="card-bottom">
+            <div class="card-action">
+              לפרטים והפעלה <i class="fa-solid fa-arrow-left"></i>
+            </div>
+          </div>
+        `;
+        
+        container.appendChild(card);
+        count++;
+      }
+      
+      // Update mouse effect tracking for card borders
+      initializeCardMouseEffects();
+    }
+
+    // --- Dynamic Slide Drawer Logic ---
+    function showProjectDetail(id) {
+      const p = PROJECT_DATA[id];
+      if (!p) return;
+      
+      document.getElementById('dyn-title').innerHTML = p.title;
+      document.getElementById('dyn-subtitle').innerHTML = p.subtitle;
+      document.getElementById('dyn-description').innerHTML = p.description;
+      document.getElementById('dyn-guide').innerHTML = p.guide;
+      
+      // Set colored theme
+      const drawer = document.getElementById('project-drawer');
+      drawer.style.setProperty('--accent-color', `var(--${p.colorClass === 'am' ? 'indigo' : p.colorClass === 'te' ? 'cyan' : p.colorClass === 'gn' ? 'emerald' : p.colorClass === 'bl' ? 'blue' : p.colorClass === 'rd' ? 'rose' : p.colorClass === 'or' ? 'gold' : p.colorClass === 'ye' ? 'gold' : 'indigo'})`);
+      
+      const iconBox = document.getElementById('dyn-icon-box');
+      iconBox.innerHTML = `<i class="${p.icon}"></i>`;
+      iconBox.style.color = `var(--accent-color)`;
+      
+      // Setup alert box
+      const alertBox = document.getElementById('dyn-alert-box');
+      if (p.alert) {
+        alertBox.innerHTML = p.alert.text;
+        alertBox.style.display = 'block';
+        if (p.alert.type === 'danger') {
+          alertBox.style.background = 'rgba(239,68,68,0.08)';
+          alertBox.style.border = '1px solid #ef4444';
+          alertBox.style.color = '#ef4444';
+        } else {
+          alertBox.style.background = 'rgba(217,119,6,0.08)';
+          alertBox.style.border = '1px solid var(--gold)';
+          alertBox.style.color = 'var(--gold)';
+        }
+      } else {
+        alertBox.style.display = 'none';
+      }
+      
+      // Populate action links
+      const actionsContainer = document.getElementById('dyn-actions-container');
+      actionsContainer.innerHTML = '';
+      p.links.forEach(lnk => {
+        const a = document.createElement('a');
+        a.href = lnk.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.className = lnk.className;
+        a.innerHTML = lnk.text;
+        actionsContainer.appendChild(a);
+      });
+      
+      // Open drawer & backdrop
+      document.getElementById('drawer-backdrop').classList.add('active');
+      drawer.classList.add('open');
+      document.body.style.overflow = 'hidden'; // Lock main scroll
+    }
+
+    function closeDrawer() {
+      document.getElementById('project-drawer').classList.remove('open');
+      document.getElementById('drawer-backdrop').classList.remove('active');
+      document.body.style.overflow = ''; // Unlock scroll
+    }
+
+    // --- Cyber Tech Intro Skip Logic ---
+    let introExited = false;
+    
+    // Check if visited before in session to skip animation
+    if (sessionStorage.getItem('intro_visited')) {
+      const overlay = document.getElementById('intro-overlay');
+      if (overlay) overlay.style.display = 'none';
+      document.body.style.overflow = '';
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
+
+    function exitIntro() {
+      if (introExited) return;
+      introExited = true;
+
+      const overlay = document.getElementById('intro-overlay');
+      if (!overlay) return;
+
+      overlay.classList.add('exit');
+      document.body.style.overflow = '';
+
+      setTimeout(() => {
+        overlay.remove();
+        sessionStorage.setItem('intro_visited', 'true');
+        // Start count-up stats animation when intro is closed
+        startCountUpStats();
+      }, 1000);
+    }
+
+    // Loader simulation
+    document.addEventListener('DOMContentLoaded', () => {
+      if (sessionStorage.getItem('intro_visited')) {
+        renderBentoCards();
+        startCountUpStats();
+        return;
+      }
+      
+      // 1. Generate floating digital particles in intro
+      const particlesContainer = document.getElementById('intro-particles');
+      if (particlesContainer) {
+        const charList = ['0', '1', '♥', '+', '•', '{ }'];
+        for (let i = 0; i < 30; i++) {
+          const pt = document.createElement('div');
+          pt.className = 'intro-pt';
+          pt.textContent = charList[Math.floor(Math.random() * charList.length)];
+          
+          const size = Math.random() * 0.4 + 0.6;
+          const left = Math.random() * 100;
+          const duration = Math.random() * 6 + 4;
+          const delay = Math.random() * 4;
+          
+          pt.style.cssText = `
+            font-size: ${size}rem;
+            left: ${left}%;
+            animation-duration: ${duration}s;
+            animation-delay: -${delay}s;
+          `;
+          particlesContainer.appendChild(pt);
+        }
+      }
+
+      // 2. Tick loader percent
+      const fill = document.getElementById('loader-fill');
+      const percentEl = document.getElementById('loader-percent');
+      const textEl = document.getElementById('loader-text');
+      
+      if (fill && percentEl && textEl) {
+        let percent = 0;
+        const statusTexts = [
+          'מאתחל מערכת לב טוב...',
+          'טוען מסד נתונים של פרויקטים...',
+          'מגדיר עיצוב זכוכית יוקרתי...',
+          'יוצר מערכות טכנולוגיות עם נשמה...',
+          'כמעט מוכן...'
+        ];
+        
+        function tick() {
+          if (introExited) return;
+          percent += Math.floor(Math.random() * 4) + 1;
+          if (percent > 100) percent = 100;
+          
+          fill.style.width = percent + '%';
+          percentEl.textContent = percent + '%';
+          
+          // Switch message text based on percentage
+          const txtIdx = Math.floor((percent / 100) * statusTexts.length);
+          if (txtIdx < statusTexts.length) {
+            textEl.textContent = statusTexts[txtIdx];
+          }
+          
+          if (percent < 100) {
+            setTimeout(tick, Math.random() * 80 + 30);
+          } else {
+            textEl.textContent = 'טעינה הושלמה בהצלחה!';
+            setTimeout(exitIntro, 500);
+          }
+        }
+        setTimeout(tick, 500);
+      }
+      
+      renderBentoCards();
+    });
+
+    // --- Statistics Count-Up Animation ---
+    function startCountUpStats() {
+      const stats = document.querySelectorAll('.stat-number[data-target]');
+      stats.forEach(s => {
+        const target = parseInt(s.getAttribute('data-target'));
+        if (isNaN(target)) return;
+        
+        let current = 0;
+        const duration = 1500; // 1.5s
+        const stepTime = Math.abs(Math.floor(duration / target));
+        
+        function step() {
+          current += 1;
+          s.textContent = current;
+          if (current < target) {
+            setTimeout(step, stepTime);
+          } else {
+            s.textContent = target;
+          }
+        }
+        setTimeout(step, 200);
+      });
+    }
+
+    // --- Card Neon Mouse Effect ---
+    function initializeCardMouseEffects() {
+      const cards = document.querySelectorAll('.bento-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', `${x}px`);
+          card.style.setProperty('--mouse-y', `${y}px`);
+        });
+      });
+    }
+
+    // --- Category Tabs Filter ---
+    const filterButtons = document.querySelectorAll('.cat-btn');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        renderBentoCards(filter);
+      });
+    });
+
+    // --- Theme Switcher ---
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+      themeToggleBtn.innerHTML = theme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+    }
+
+    // --- Scroll Navbar Effect ---
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // --- Mobile Menu Toggle ---
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinksMenu = document.getElementById('nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+      navLinksMenu.classList.toggle('active');
+      const icon = menuToggle.querySelector('i');
+      icon.className = navLinksMenu.classList.contains('active') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinksMenu.classList.remove('active');
+        menuToggle.querySelector('i').className = 'fa-solid fa-bars';
+      });
+    });
+  </script>
+</body>
+</html>
